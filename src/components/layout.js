@@ -9,7 +9,7 @@ import { useStickyDispatch } from 'contexts/app/app.provider';
 
 import Header from './header/header';
 import Footer from './footer/footer';
-export default function Layout({ children }) {
+export default function Layout({ children, pageFrom }) {
   const isSticky = useStickyState('isSticky');
   const dispatch = useStickyDispatch();
   const setSticky = useCallback(() => dispatch({ type: 'SET_STICKY' }), [
@@ -45,7 +45,7 @@ export default function Layout({ children }) {
       >
         {children}
       </main>
-      <Footer />
-    </React.Fragment>
+      {pageFrom == "whitelist" ? <></> : <Footer />}
+      </React.Fragment>
   );
 }
