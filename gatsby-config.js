@@ -5,6 +5,7 @@ module.exports = {
     author: `Elysian`,
   },
   plugins: [
+
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
     {
@@ -63,12 +64,6 @@ module.exports = {
         cookieDomain: 'example.com',
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-mailchimp',
-    //   options: {
-    //     endpoint: '', // add your MC list endpoint here; see instructions from gatsby's website
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
