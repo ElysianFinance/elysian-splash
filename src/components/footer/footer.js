@@ -23,7 +23,7 @@ const Footer = () => {
                 ))} 
           
                 </Flex>*/}
-        <span style={{fontSize:"13px"}} >Copyright Elysian Finance 2022 - All rights reserved</span>
+        <span className={styles.footerText} >Copyright Elysian Finance 2022 - All rights reserved</span>
       </Container>
     </Box>
   );
@@ -35,6 +35,10 @@ const styles = {
   footer: {
     pt: ['65px', null, '75px', null, '90px'],
     pb: ['25px', null, '35px', '25px', '80px'],
+    bottom: "0",
+    position: "absolute",
+    height: "100px",
+    width: "100%",    
   },
   row: {
     display: 'flex',
@@ -73,4 +77,7 @@ const styles = {
       },
     },
   },
+  footerText: {
+    fontSize: '13px'
+  }
 };
