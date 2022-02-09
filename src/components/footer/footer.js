@@ -7,23 +7,8 @@ import FOOTER_DATA from './footer.data';
 const Footer = () => {
   return (
     <Box as="footer" sx={styles.footer}>
-      <Container style={{textAlign:"center"}}>
-        {/*<Flex sx={styles.row}>
-          {FOOTER_DATA.map(({ title, menuItem }, index) => (
-            <Box sx={styles.widget} key={`footer-widget-key-${index}`}>
-              <Heading as="h2">{title}</Heading>
-              <ul>
-                {menuItem.map(({ link, label }, index) => (
-                  <li key={`footer-menu-item-key-${index}`}>
-                    <Link href={link}>{label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </Box>
-                ))} 
-          
-                </Flex>*/}
-        <span className={styles.footerText} >Copyright Elysian Finance 2022 - All rights reserved</span>
+      <Container style={{textAlign:"center",  display: "flex",  flexDirection: "column" }}>
+          <div style={{marginTop:"auto"}}><span className={styles.footerText} >Copyright Elysian Finance 2022 - All rights reserved</span></div>
       </Container>
     </Box>
   );
@@ -35,10 +20,10 @@ const styles = {
   footer: {
     pt: ['65px', null, '75px', null, '90px'],
     pb: ['25px', null, '35px', '25px', '80px'],
-    bottom: "0",
-    position: "fixed",
-    height: "100px",
-    width: "100%",    
+    //bottom: "0",
+    //position: "fixed",
+    //height: "100px",
+    //width: "100%",    
   },
   row: {
     display: 'flex',
@@ -78,6 +63,7 @@ const styles = {
     },
   },
   footerText: {
-    fontSize: '13px'
+    fontSize: '13px',
+    marginTop: "auto"
   }
 };
