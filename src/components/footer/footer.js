@@ -36,7 +36,7 @@ const styles = {
     pt: ['65px', null, '75px', null, '90px'],
     pb: ['25px', null, '35px', '25px', '80px'],
     bottom: "0",
-    position: "absolute",
+    position: "fixed",
     height: "100px",
     width: "100%",    
   },
