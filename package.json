@@ -36,11 +36,13 @@
     "react-slick": "^0.28.1",
     "react-stickynode": "^3.0.5",
     "react-waypoint": "^9.0.3",
+    "stream-browserify": "^3.0.0",
     "theme-ui": "^0.6.0",
     "typeface-archivo": "^1.1.13",
     "typeface-bree-serif": "^1.1.13",
     "typeface-dm-sans": "^1.1.13",
-    "use-media-query-hook": "^0.3.0"
+    "use-media-query-hook": "^0.3.0",
+    "web3-utils": "^1.7.0"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
