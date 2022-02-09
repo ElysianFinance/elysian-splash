@@ -4,12 +4,14 @@ import Seo from 'components/seo';
 import Layout from 'components/layout';
 import ContactForm from "components/contactForm"
 import { Container, Box, Heading, Text, Button, Link } from 'theme-ui';
+import useMediaQuery from "use-media-query-hook"
 
 import 'rc-drawer/assets/index.css';
 import 'react-modal-video/css/modal-video.min.css';
 import {isMobile} from 'react-device-detect';
 
 export default function IndexPage() {
+  const isMobile = useMediaQuery("(max-width: 425px)")
   console.log(`Is mobile ${isMobile}`)
 
   return (
@@ -22,7 +24,7 @@ export default function IndexPage() {
         <Box style={
               isMobile ? 
               { position:"absolute",top:"10%",left:"10%", minWidth: "40%", height:"100%" } :  
-              { position:"absolute",top:"10%",left:"10%", minWidth: "40%", height:"100%" }}>
+              { position:"absolute",top:"10%",left:"25%", minWidth: "40%", height:"100%" }}>
             <ContactForm />
         </Box>
 

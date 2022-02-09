@@ -27,7 +27,7 @@ export default function Layout({ children, pageFrom }) {
       removeSticky();
     }
   };
-
+ 
   return (
     <React.Fragment>
       <Sticky enabled={isSticky} innerZ={991}>
