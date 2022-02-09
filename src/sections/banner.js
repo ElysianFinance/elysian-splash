@@ -10,7 +10,7 @@ const BANNER_DATA = {
   text:
     'We are building a next generation reserve backed token for DeFi 3.0 and the decentralized web. Our goal is to build a non-custodial protocol focused on algorithmic assets emission and advanced on-chain asset management. Elysian treasury will engage in strategies ranging from arbitraging to market making, robo trading and EFTs. Our smart contracts provide full transparency about how the strategies are performing and how they are composed and operated. Elysian token (LYS) is backed by a basket of assets in the treasury, which combined with risk free value (RFV) gives it intrinsic worth and ensures 1 LYS minted is always backed by $1.',
   button: {
-    link: '#',
+    link: 'contact',
     label: 'Get whitelisted',
   },
   videoBtn: {
