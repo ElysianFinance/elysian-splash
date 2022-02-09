@@ -22,7 +22,7 @@ export default function IndexPage() {
         <Box style={
               isMobile ? 
               { position:"absolute",top:"10%",left:"10%", minWidth: "40%", height:"100%" } :  
-              { position:"absolute",top:"10%",left:"25%", minWidth: "40%", height:"100%" }}>
+              { position:"absolute",top:"10%",left:"10%", minWidth: "40%", height:"100%" }}>
             <ContactForm />
         </Box>
 
