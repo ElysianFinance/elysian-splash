@@ -1,7 +1,10 @@
-import React from "react"
+import React, {useState} from "react"
 //import { Button, Container, Row, Col } from 'react-bootstrap';
 import { Container, Box, Heading, Text, Button, Link } from 'theme-ui';
-import {mediaQueries} from './components.module.css'; 
+import w3utils from "web3-utils";
+
+const functionURL = "https://bubbles-locust-6581.twil.io/send-email"
+
 
 class ContactForm extends React.Component {
  constructor(props) {
@@ -10,9 +13,68 @@ class ContactForm extends React.Component {
      buttonDisabled: true,
      message: { fromEmail: "", subject: "", body: "" },
      submitting: false,
-     error: null,
+     error: null
    }
  }
+
+ sleep = (ms) => {
+  return new Promise(resolve => setTimeout(resolve, ms));
+ }
+
+ onClick = async event => {
+   
+  event.preventDefault()
+  this.setState({ submitting: true })
+  
+
+     
+    let { fromEmail, address, body } = this.state.message
+  
+    const isAddress = w3utils.isAddress(address)
+    console.log(`Is Address ${address} ${isAddress}`)
+
+
+    if (!isAddress) {
+      this.setState({
+        success: false,
+        submitting: false,
+        error: "Invalid Ethereum address"
+      })
+      return
+    }
+    let subject = "whitelist participation";
+    body = `I want to be whitelisted for the Pre-Elysian Token Sale, address: ${address}`
+
+    await this.sleep(3000)
+
+    const response = await fetch(functionURL, {
+      method: "post",
+      headers: {
+        "Content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+      },
+      body: new URLSearchParams({ fromEmail, subject, body }).toString(),
+    })
+     
+    if (response.status === 200) {
+      this.setState({
+        error: null,
+        submitting: false,
+        success: true,
+        message: {
+          fromEmail: "",
+          subject: "",
+          body: "",
+        },
+      })
+    } else {
+      const json = await response.json()
+      this.setState({
+        error: json.error,
+        submitting: false,
+      })
+    }
+   
+}
 
  onChange = event => {
    const name = event.target.getAttribute("name")
@@ -21,10 +83,12 @@ class ContactForm extends React.Component {
    })
  }
  render() {
-     console.log(mediaQueries)
+   
+
    return (
      <>
-       <div>{this.state.error}</div>
+        {this.state.error !== null ? <>{this.state.error}</> : this.state.success === true ?
+         <p style={{fontSize:"18px"}}>{"Thank you for your interest"}</p> : 
        <form
          style={{
            display: `flex`,
@@ -48,9 +112,9 @@ class ContactForm extends React.Component {
          <label htmlFor="subject">Ethereum wallet address:</label>
          <input
            type="text"
-           name="subject"
-           id="subject"
-           value={this.state.message.subject}
+           name="address"
+           id="address"
+           value={this.state.message.address}
            style={{width:"70%", fontSize:"18px"}}
            onChange={this.onChange}
          />
@@ -60,7 +124,7 @@ class ContactForm extends React.Component {
                 sx={styles.btn} 
                 onClick={this.onClick}  
                 disabled={this.state.submitting}>
-              {"Subscribe"}
+              {this.state.submitting === true ? "..." : this.state.success === true ? "Done" : "Send"}
             </Button>
         </Box>
         <br />
@@ -73,7 +137,7 @@ class ContactForm extends React.Component {
             in the Token Sale. The term “Restricted Persons” refers to any firm, company, partnership, trust, corporation, entity, government, state or agency of a state or any other incorporated or unincorporated body or association, association or partnership (whether or not having separate legal personality) 
             that is established and/or lawfully existing under the laws of a Restricted Jurisdiction (including in the case of United States of America, under the federal laws of the United States of America or under the laws of any of its States).
         </p>  
-       </form>
+       </form>}
      </>
    )
  }
