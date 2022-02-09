@@ -39,7 +39,8 @@
     "theme-ui": "^0.6.0",
     "typeface-archivo": "^1.1.13",
     "typeface-bree-serif": "^1.1.13",
-    "typeface-dm-sans": "^1.1.13"
+    "typeface-dm-sans": "^1.1.13",
+    "use-media-query-hook": "^0.3.0"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
