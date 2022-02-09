@@ -23,7 +23,7 @@ const Footer = () => {
                 ))} 
           
                 </Flex>*/}
-        <span className={styles.footerText} >Copyright Elysian Finance 2022 - All rights reserved</span>
+        <span className={styles.footerText} >Elysian Finance &copy; 2022 - All rights reserved</span>
       </Container>
     </Box>
   );

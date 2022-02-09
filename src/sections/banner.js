@@ -42,7 +42,7 @@ const Banner = () => {
       <Container sx={styles.container}>
         <Box sx={styles.content}>
           <Heading as="h1">
-            <span style={{color:"#2e3477"}}>{title1}</span>{" "}
+            <span style={{color:"#2e3477"}}>{title1}</span>{" "}<br/>
             <span style={{color:"#905bc4"}}>{title2}</span>
             </Heading>
           {text}
@@ -83,7 +83,7 @@ const styles = {
   },
   content: {
     maxWidth: ['100%', null, null, '355px', '460px', '545px', null, '590px'],
-    textAlign: ['center', null, null, 'left'],
+    textAlign: ['left', null, null, 'left'],
     h1: {
       fontSize: ['28px', '32px', null, '34px', '40px', '48px', '54px', '58px'],
       lineHeight: [1.4, null, null, 1.35],
