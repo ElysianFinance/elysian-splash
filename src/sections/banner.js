@@ -43,9 +43,9 @@ const Banner = () => {
       <Container sx={styles.container}>
         <Box sx={styles.content}>
           <Heading as="h1">
-            <span style={{color:"#3844cd"}}>{title1}</span>{" "}<br/>
+            <span style={{color:"#39419b"}}>{title1}</span>{" "}<br/>
             <span style={{color:"#905bc4"}}>{title2}</span>
-            <span style={{color:"#3844cd"}}>{title3}</span>
+            <span style={{color:"#39419b"}}>{title3}</span>
             </Heading>
           <br />
           {text}

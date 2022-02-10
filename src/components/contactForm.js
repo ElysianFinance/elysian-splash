@@ -122,7 +122,7 @@ class ContactForm extends React.Component {
          }}
          method="post"
        >
-        <h1><span style={{color:"#3844cd"}}>Pre-Elysian (pLYS)</span><span style={{color:"#905bc4"}}> whitelist form</span></h1>
+        <h1><span style={{color:"#39419b"}}>Pre-Elysian (pLYS)</span><span style={{color:"#905bc4"}}> whitelist form</span></h1>
         <label htmlFor="fromEmail" style={{fontSize:"18px"}}>Your email address:</label>
         <input
             type="email"
@@ -154,7 +154,7 @@ class ContactForm extends React.Component {
         </Box>
         <br />
         <br />
-        <p style={{fontSize:"13px", color:"#3844cd", fontWeight:"bold"}}>Please note, submitting the same email and/or Ethereum address twice will cause <span style={{color:"#905BC4"}}>disqualification</span>.</p>
+        <p style={{fontSize:"13px", color:"#39419b", fontWeight:"bold"}}>Please note, submitting the same email and/or Ethereum address twice will cause <span style={{color:"#905BC4"}}>disqualification</span>.</p>
         <br />
         <span style={{fontSize:"13px", justifyContent:"left", fontWeight: "bold", alignItems:"left", maxWidth:"90%"}}>
           {"Legal notice:"}
