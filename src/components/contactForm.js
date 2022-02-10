@@ -154,7 +154,7 @@ class ContactForm extends React.Component {
         </Box>
         <br />
         <br />
-        <p style={{fontSize:"13px", color:"#39419b", fontWeight:"bold"}}>Please note, submitting the same email and/or Ethereum address twice will cause <span style={{color:"#905BC4"}}>disqualification</span>.</p>
+        <p style={{fontSize:"13px", color:"#39419b", fontWeight:"bold", alignItems:"left", maxWidth:"90%"}}>Please note, submitting the same email and/or Ethereum address twice will cause <span style={{color:"#905BC4"}}>disqualification</span>.</p>
         <br />
         <span style={{fontSize:"13px", justifyContent:"left", fontWeight: "bold", alignItems:"left", maxWidth:"90%"}}>
           {"Legal notice:"}
