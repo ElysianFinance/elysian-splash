@@ -45,7 +45,7 @@ export default function Layout({ children, pageFrom }) {
       >
         {children}
       </main>
-      {pageFrom == "whitelist" ? <></> : <Footer />}
+      {pageFrom == "whitelist" || pageFrom == "404" ? <></> : <Footer />}
       </React.Fragment>
   );
 }
