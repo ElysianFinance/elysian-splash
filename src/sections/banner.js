@@ -45,6 +45,7 @@ const Banner = () => {
             <span style={{color:"#2e3477"}}>{title1}</span>{" "}<br/>
             <span style={{color:"#905bc4"}}>{title2}</span>
             </Heading>
+          <br />
           {text}
           <Box sx={styles.btnWrap}>
             <Link href={button.link} sx={styles.btn}>

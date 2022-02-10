@@ -112,7 +112,7 @@ class ContactForm extends React.Component {
         {this.state.error !== null ? 
         <>
         <p style={{fontSize:"18px", color:"#905BC4", fontWeight:"bold", marginTop:"15%"}}>{this.state.error} 
-        <br /> 
+        <br /> <br /> 
         <Button sx={styles.btn}  onClick={() => navigate(-1)}>Go Back</Button>
         </p> 
         </> : this.state.success === true ?
