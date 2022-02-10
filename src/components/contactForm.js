@@ -3,7 +3,7 @@ import React, {useState} from "react"
 import { Container, Box, Heading, Text, Button, Link } from 'theme-ui';
 import w3utils from "web3-utils";
 import { navigate } from "gatsby";
-
+ 
 const functionURL = "https://bubbles-locust-6581.twil.io/send-email"
 
 //onClick={history.goBack}
@@ -44,6 +44,14 @@ class ContactForm extends React.Component {
 
     console.log(`Is Address ${address} ${isAddress} isEmail ${fromEmail} ${isEmail}`)
 
+    if (isEmail === null) {
+      this.setState({
+        success: false,
+        submitting: false,
+        error: "Invalid email address"
+      })
+      return
+    }
 
     if (!isAddress) {
       this.setState({
@@ -54,14 +62,6 @@ class ContactForm extends React.Component {
       return
     }
 
-    if (isEmail === null) {
-      this.setState({
-        success: false,
-        submitting: false,
-        error: "Invalid email address"
-      })
-      return
-    }
 
     let subject = "whitelist participation";
     body = `I want to be whitelisted for the Pre-Elysian Token Sale, address: ${address}`
@@ -152,7 +152,7 @@ class ContactForm extends React.Component {
                 sx={styles.btn} 
                 onClick={this.onClick}  
                 disabled={this.state.submitting}>
-              {this.state.submitting === true ? "..." : this.state.success === true ? "Done" : "Send"}
+              {this.state.submitting === true ? "..." : this.state.success === true ? "Done" : "Participate"}
             </Button>
         </Box>
         <br />
@@ -165,7 +165,7 @@ class ContactForm extends React.Component {
             in the Token Sale. The term “Restricted Persons” refers to any firm, company, partnership, trust, corporation, entity, government, state or agency of a state or any other incorporated or unincorporated body or association, association or partnership (whether or not having separate legal personality) 
             that is established and/or lawfully existing under the laws of a Restricted Jurisdiction (including in the case of United States of America, under the federal laws of the United States of America or under the laws of any of its States).
         </p>  
-        <div class="g-recaptcha" data-sitekey="6LcX5GseAAAAALCUW3QhxEdYhHc1NJzCu44dBM4S"></div>
+        <div className="g-recaptcha" data-sitekey="6LcX5GseAAAAALCUW3QhxEdYhHc1NJzCu44dBM4S"></div>
 
        </form>}
      </>
@@ -175,9 +175,9 @@ class ContactForm extends React.Component {
 const styles = {
     btnWrap: {
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'left',
         // mt: ['25px', null, null, '30px', '35px', '50px'],
-        justifyContent: ['center', null, null, 'flex-start'],
+        justifyContent: ['left', null, null, 'flex-start'],
     },
     disclaimer: { 
         marginTop:"90%", 
