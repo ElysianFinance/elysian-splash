@@ -156,6 +156,9 @@ class ContactForm extends React.Component {
         <br />
         <p style={{fontSize:"13px", color:"#905BC4", fontWeight:"bold"}}>Please note, submitting the same email and/or Ethereum address twice will cause disqualification.</p>
         <br />
+        <span style={{fontSize:"11px", justifyContent:"left", alignItems:"left", maxWidth:"90%"}}>
+          {"Legal notice:"}
+        </span>
         <p style={{fontSize:"11px", justifyContent:"left", alignItems:"left", maxWidth:"90%"}}>
  
             The information contained in this newsletter is provided by Elysian Finance as a service/promotion to its users, subscribers, customers and possible others. It does not contain (legal) advice. Although we try to provide quality information, we do not guarantee of results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance for a particular purpose.
