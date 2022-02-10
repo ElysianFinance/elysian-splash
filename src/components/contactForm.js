@@ -133,7 +133,7 @@ class ContactForm extends React.Component {
             id="fromEmail"
             value={this.state.message.fromEmail}
             onChange={this.onChange}
-            style={{width:"70%", fontSize:"18px"}}
+            style={{width:"60%", fontSize:"18px"}}
              >
         </input>
          <br />
@@ -143,7 +143,7 @@ class ContactForm extends React.Component {
            name="address"
            id="address"
            value={this.state.message.address}
-           style={{width:"70%", fontSize:"18px"}}
+           style={{width:"60%", fontSize:"18px"}}
            onChange={this.onChange}
          />
         <br />
