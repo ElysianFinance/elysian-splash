@@ -36,9 +36,7 @@ class ContactForm extends React.Component {
    
   event.preventDefault()
   this.setState({ submitting: true })
-  
-
-     
+       
     let { fromEmail, address, body } = this.state.message
   
     const isAddress = w3utils.isAddress(address)
@@ -70,13 +68,13 @@ class ContactForm extends React.Component {
 
     await this.sleep(1500)
 
-    const response = {status: 200} /*await fetch(functionURL, {
+    const response = await fetch(functionURL, {
       method: "post",
       headers: {
         "Content-type": "application/x-www-form-urlencoded; charset=UTF-8",
       },
       body: new URLSearchParams({ fromEmail, subject, body }).toString(),
-    })*/
+    })
      
     if (response.status === 200) {
       this.setState({
