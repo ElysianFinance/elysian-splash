@@ -1,12 +1,12 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
-import { Link as ScrollLink } from 'react-scroll';
+ import { Link as ScrollLink } from 'react-scroll';
 import Logo from 'components/logo';
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
 import MENU_DATA from './header.data';
 import logoDark from 'assets/logo-type.svg';
+import { jsx, Flex, Container, Box, Heading, Text, Button, Link } from 'theme-ui';
 
 /*
             <ScrollLink
@@ -36,6 +36,7 @@ export default function Header({ className }) {
      
               <a href={path} sx={styles.nav.navLink} target="_new">{label}</a>
             ))}
+            <Button sx={styles.btn}>Launch dApp</Button>
           </Flex>
           <MobileDrawer />
         </Container>
@@ -87,4 +88,22 @@ const styles = {
       },
     },
   },
+  btn: {
+    backgroundColor: 'heading_secondary',
+    borderRadius: '7px',
+    lineHeight: 1,
+    fontSize: ['13px', '14px', '15px'],
+    padding: ['14px 20px 13px', '14px 25px 13px', '17px 30px 15px'],
+    fontWeight: 700,
+    display: 'inline-flex',
+    marginTop: '7px',
+    alignItems: 'center',
+    textTransform: 'uppercase',
+    color: '#ffffff',
+    transition: 'all 300ms ease',
+    '&:hover': {
+      opacity: 0.8,
+    },
+  },
 };
+ 
