@@ -9,6 +9,20 @@ import MENU_DATA from './header.data';
 import Logo from 'components/logo';
 import logoDark from 'assets/logo-type-black.svg';
 
+/*
+              <ScrollLink
+                activeClass="active"
+                to={path}
+                spy={true}
+                smooth={true}
+                offset={10}
+                duration={500}
+                key={i}
+              >
+                {label}
+              </ScrollLink>
+*/
+
 const MobileDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
 
@@ -38,17 +52,8 @@ const MobileDrawer = () => {
           <Logo image={logoDark} />
           <Box sx={styles.menu}>
             {MENU_DATA.map(({ path, label }, i) => (
-              <ScrollLink
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={10}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </ScrollLink>
+ 
+              <a href={path} key={i}> {label}</a>
             ))}
           </Box>
 
