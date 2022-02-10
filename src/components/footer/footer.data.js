@@ -2,7 +2,7 @@ const FOOTER_DATA = [
   {
     menuItem: [
       {
-        link: '#',
+        link: 'https://medium.com/@elysianfinance',
         label: 'Medium',
       },
     ],
@@ -10,7 +10,7 @@ const FOOTER_DATA = [
   {
     menuItem: [
       {
-        link: '#',
+        link: 'https://twitter.com/Elysian_Finance',
         label: 'Twitter',
       },
     ],
@@ -26,7 +26,7 @@ const FOOTER_DATA = [
   {
     menuItem: [
       {
-        link: '#',
+        link: 'https://t.me/elysianfinance',
         label: 'Telegram',
       },
     ],
@@ -34,7 +34,7 @@ const FOOTER_DATA = [
   {
     menuItem: [
       {
-        link: '#',
+        link: 'https://github.com/ElysianFinance/',
         label: 'Github',
       },
     ],

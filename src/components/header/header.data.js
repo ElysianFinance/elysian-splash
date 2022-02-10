@@ -1,10 +1,10 @@
 const MENU_DATA = [
   {
-    path: 'banner',
+    path: 'https://medium.com/@elysianfinance',
     label: 'Medium',
   },
   {
-    path: 'services',
+    path: 'https://twitter.com/Elysian_Finance',
     label: 'Twitter',
   },
   {
@@ -12,11 +12,11 @@ const MENU_DATA = [
     label: 'Discord',
   },
   {
-    path: 'roadmap',
+    path: 'https://t.me/elysianfinance',
     label: 'Telegram',
   },
   {
-    path: 'services',
+    path: 'https://github.com/ElysianFinance',
     label: 'Github',
   },
 ];
