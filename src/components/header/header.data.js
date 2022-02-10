@@ -8,7 +8,7 @@ const MENU_DATA = [
     label: 'Twitter',
   },
   {
-    path: 'services',
+    path: 'https://discord.gg/gNFfBfV4he',
     label: 'Discord',
   },
   {

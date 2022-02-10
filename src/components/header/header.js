@@ -34,7 +34,7 @@ export default function Header({ className }) {
           <Flex as="nav" sx={styles.nav}>
             {MENU_DATA.map(({ path, label }, i) => (
      
-              <a href={path} sx={styles.nav.navLink} target="_new">{label}</a>
+              <a href={path} sx={styles.nav.navLink} target="_new" key={i}>{label}</a>
             ))}
             <Button sx={styles.btn}>Launch dApp</Button>
           </Flex>

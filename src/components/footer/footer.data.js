@@ -18,7 +18,7 @@ const FOOTER_DATA = [
   {
     menuItem: [
       {
-        link: '#',
+        link: 'https://discord.gg/gNFfBfV4he',
         label: 'Discord',
       },
     ],
