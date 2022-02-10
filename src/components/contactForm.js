@@ -2,9 +2,11 @@ import React, {useState} from "react"
 //import { Button, Container, Row, Col } from 'react-bootstrap';
 import { Container, Box, Heading, Text, Button, Link } from 'theme-ui';
 import w3utils from "web3-utils";
+import { navigate } from "gatsby";
 
 const functionURL = "https://bubbles-locust-6581.twil.io/send-email"
 
+//onClick={history.goBack}
 
 class ContactForm extends React.Component {
  constructor(props) {
@@ -15,7 +17,16 @@ class ContactForm extends React.Component {
      submitting: false,
      error: null
    }
+ 
  }
+
+  validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
 
  sleep = (ms) => {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -31,7 +42,9 @@ class ContactForm extends React.Component {
     let { fromEmail, address, body } = this.state.message
   
     const isAddress = w3utils.isAddress(address)
-    console.log(`Is Address ${address} ${isAddress}`)
+    const isEmail = this.validateEmail(fromEmail)
+
+    console.log(`Is Address ${address} ${isAddress} isEmail ${fromEmail} ${isEmail}`)
 
 
     if (!isAddress) {
@@ -42,18 +55,28 @@ class ContactForm extends React.Component {
       })
       return
     }
+
+    if (isEmail === null) {
+      this.setState({
+        success: false,
+        submitting: false,
+        error: "Invalid email address"
+      })
+      return
+    }
+
     let subject = "whitelist participation";
     body = `I want to be whitelisted for the Pre-Elysian Token Sale, address: ${address}`
 
-    await this.sleep(3000)
+    await this.sleep(1500)
 
-    const response = await fetch(functionURL, {
+    const response = {status: 200} /*await fetch(functionURL, {
       method: "post",
       headers: {
         "Content-type": "application/x-www-form-urlencoded; charset=UTF-8",
       },
       body: new URLSearchParams({ fromEmail, subject, body }).toString(),
-    })
+    })*/
      
     if (response.status === 200) {
       this.setState({
@@ -76,6 +99,7 @@ class ContactForm extends React.Component {
    
 }
 
+
  onChange = event => {
    const name = event.target.getAttribute("name")
    this.setState({
@@ -87,8 +111,14 @@ class ContactForm extends React.Component {
 
    return (
      <>
-        {this.state.error !== null ? <>{this.state.error}</> : this.state.success === true ?
-         <p style={{fontSize:"18px"}}>{"Thank you for your interest"}</p> : 
+        {this.state.error !== null ? 
+        <>
+        <p style={{fontSize:"18px", color:"#905BC4", fontWeight:"bold", marginTop:"15%"}}>{this.state.error} 
+        <br /> 
+        <Button sx={styles.btn}  onClick={() => navigate(-1)}>Go Back</Button>
+        </p> 
+        </> : this.state.success === true ?
+         <center><p style={{fontSize:"18px", marginTop:"15%"}}>{"Thank you for your interest."}  <br /> {"We will get in touch soon."}</p></center>  : 
        <form
          style={{
            display: `flex`,
@@ -137,6 +167,8 @@ class ContactForm extends React.Component {
             in the Token Sale. The term “Restricted Persons” refers to any firm, company, partnership, trust, corporation, entity, government, state or agency of a state or any other incorporated or unincorporated body or association, association or partnership (whether or not having separate legal personality) 
             that is established and/or lawfully existing under the laws of a Restricted Jurisdiction (including in the case of United States of America, under the federal laws of the United States of America or under the laws of any of its States).
         </p>  
+        <div class="g-recaptcha" data-sitekey="6LcX5GseAAAAALCUW3QhxEdYhHc1NJzCu44dBM4S"></div>
+
        </form>}
      </>
    )
