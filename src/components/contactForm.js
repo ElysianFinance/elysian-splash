@@ -6,8 +6,6 @@ import { navigate } from "gatsby";
  
 const functionURL = "https://bubbles-locust-6581.twil.io/send-email"
 
-//onClick={history.goBack}
-
 class ContactForm extends React.Component {
  constructor(props) {
    super(props)
@@ -17,7 +15,6 @@ class ContactForm extends React.Component {
      submitting: false,
      error: null
    }
- 
  }
 
   validateEmail = (email) => {
@@ -125,7 +122,7 @@ class ContactForm extends React.Component {
          }}
          method="post"
        >
-        <h1>Pre-Elysian (pLYS) Whitelist form</h1>
+        <h1>Pre-Elysian (pLYS) whitelist form</h1>
         <label htmlFor="fromEmail" style={{fontSize:"18px"}}>Your email address:</label>
         <input
             type="email"
