@@ -13,7 +13,7 @@ export default function IndexPage() {
       <Layout>
         <Seo
           title="Elysian Finance"
-          description="Elysian Finance is a next generation reserve backed token for DeFi 3.0 and the decentralized web."
+          description="Elysian Finance is a next gen reserve backed token for DeFi 3.0 and the decentralized web."
         />
         <Banner />
  

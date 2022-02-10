@@ -8,16 +8,8 @@ import MobileDrawer from './mobileDrawer';
 import MENU_DATA from './header.data';
 import logoDark from 'assets/logo-type.svg';
 
-export default function Header({ className }) {
-  return (
-    <DrawerProvider>
-      <header sx={styles.header} className={className}>
-        <Container sx={styles.container}>
-          <Logo image={logoDark} />
-
-          <Flex as="nav" sx={styles.nav}>
-            {MENU_DATA.map(({ path, label }, i) => (
-              <ScrollLink
+/*
+            <ScrollLink
                 activeClass="active"
                 sx={styles.nav.navLink}
                 to={path}
@@ -29,6 +21,20 @@ export default function Header({ className }) {
               >
                 {label}
               </ScrollLink>
+            
+            */
+          
+export default function Header({ className }) {
+  return (
+    <DrawerProvider>
+      <header sx={styles.header} className={className}>
+        <Container sx={styles.container}>
+          <Logo image={logoDark} />
+
+          <Flex as="nav" sx={styles.nav}>
+            {MENU_DATA.map(({ path, label }, i) => (
+     
+              <a href={path} sx={styles.nav.navLink} target="_new">{label}</a>
             ))}
           </Flex>
           <MobileDrawer />
