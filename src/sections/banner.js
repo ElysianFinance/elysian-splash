@@ -4,7 +4,7 @@ import { Container, Box, Heading, Text, Button, Link } from 'theme-ui';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlayCircle } from 'react-icons/io';
 import { useStaticQuery, graphql } from 'gatsby';
-const BANNER_DATA = {
+const BANNER_DATA = {     
   title1: "Next Gen", 
   title2: "Reserve backed ",
   title3: "token",
@@ -85,6 +85,7 @@ const styles = {
     flexDirection: ['column', null, null, 'row'],
   },
   content: {
+    color:"#e1eef5",
     maxWidth: ['100%', null, null, '355px', '460px', '545px', null, '590px'],
     textAlign: ['left', null, null, 'left'],
     h1: {
