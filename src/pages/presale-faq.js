@@ -114,7 +114,7 @@ export default function IndexPage() {
               </table>
 
               <Box sx={styles.btnWrap}>
-                <Link href={"#"} sx={styles.btn}>
+                <Link href={"https://launch.elysian.finance"} target="_new" sx={styles.btn}>
                   {"Launchpad"}
                 </Link>
               </Box>
