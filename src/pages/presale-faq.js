@@ -75,7 +75,7 @@ export default function IndexPage() {
                     <h3>{"How do I purchase pLYS token?"}</h3>
                   </td>
                   <td>
-                    <p>{"Accepted currencies are ETH, BNB, DAI, USDC, USDT, sUSD"}</p>
+                    <p>{"Accepted currencies are ETH, BNB, DAI, USDC, USDT and sUSD."}</p>
                   </td>
                 </tr>
                 <tr>  
@@ -99,7 +99,7 @@ export default function IndexPage() {
                     <h3>{"Is there a minimum investment amount during the token sale?"}</h3>
                   </td>
                   <td>
-                    <p>{"There is no minimum, however there is a maximum number of tokens allocated. The allocation is calculated as the total amount of pLYS available divided by the amount of participants and may vary if participants do not buy their whole allocation."}</p>
+                    <p>{"There is no minimum, however there is a maximum number of tokens allocated. The allocation is calculated as the total amount of pLYS available divided by the amount of participants and will vary if participants do not buy their whole allocation."}</p>
                   </td>
                 </tr>  
                 <tr>  
@@ -115,7 +115,7 @@ export default function IndexPage() {
                     <h3>{"Are there any restrictions on who can participate in the token sale?"}</h3>
                   </td>
                   <td>
-                    <p>{"If you are a citizen of any US/UK sanctioned countries you shall not participate in this sale. In addition, we are not able to issue awards to individuals who are on sanctions lists or who are in countries on sanctions lists (e.g. North Korea, Iran, etc)."}</p>
+                    <p>{"If you are a citizen of any US or UK sanctioned countries you shall not participate in this sale. In addition, we are not able to do business with individuals who are on sanctions lists or who are in countries on sanctions lists (e.g. North Korea, Iran, etc)."}</p>
                   </td>
                 </tr>    
                 <tr>  
