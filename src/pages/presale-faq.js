@@ -18,7 +18,7 @@ export default function IndexPage() {
     const tokenAddress = '0x25bf213773E5FC3644Da4F134de310370DCAA3E8';
     const tokenSymbol = 'pLYS';
     const tokenDecimals = 18;
-    const tokenImage = 'http://placekitten.com/200/300';
+    const tokenImage = 'https://raw.githubusercontent.com/ElysianFinance/elysian-assets/master/images/pLYS.png';
     const { ethereum } = window;
     if (typeof ethereum !== 'undefined') {
       try {
@@ -67,7 +67,7 @@ export default function IndexPage() {
                     <h3>{"When is the presale?"}</h3>
                   </td>
                   <td>
-                    <p>{"   The token sale begins on ."}</p>
+                    <p>{"The presale has begun and will last until all tokens are exhausted."}</p>
                   </td>
                 </tr>
                 <tr>  
@@ -75,7 +75,15 @@ export default function IndexPage() {
                     <h3>{"How do I purchase pLYS token?"}</h3>
                   </td>
                   <td>
-                    <p>{"In order to purchase their tokens, participants must visit the portal and deposit ETH or stablecoin equivalent (DAI, USDC, USDT) in order to withdraw their pLYS."}</p>
+                    <p>{"Accepted currencies are ETH, BNB, DAI, USDC, USDT, sUSD"}</p>
+                  </td>
+                </tr>
+                <tr>  
+                  <td>
+                    <h3>{"On which blockchain is the presale happening?"}</h3>
+                  </td>
+                  <td>
+                    <p>{"The presale will take place simultaneously on Ethereum and Binance Smart Chain (BSC). If you buy on BSC, you will be able to redeem your tokens on Ethereum."}</p>
                   </td>
                 </tr>
                 <tr>  
@@ -83,7 +91,7 @@ export default function IndexPage() {
                     <h3>{"What is pLYS price during the private sale?"}</h3>
                   </td>
                   <td>
-                    <p>{"The token price during the private sale is $0.01."}</p>
+                    <p>{"The price during the private sale is $0.01 (US Dollars)."}</p>
                   </td>
                 </tr>   
                 <tr>  
@@ -91,7 +99,15 @@ export default function IndexPage() {
                     <h3>{"Is there a minimum investment amount during the token sale?"}</h3>
                   </td>
                   <td>
-                    <p>{"No, there is no minimum however there is a maximum. The max is calculated as the total amount of pLYS available divided by the amount of participants in the whitelist at a given moment."}</p>
+                    <p>{"There is no minimum, however there is a maximum number of tokens allocated. The allocation is calculated as the total amount of pLYS available divided by the amount of participants and may vary if participants do not buy their whole allocation."}</p>
+                  </td>
+                </tr>  
+                <tr>  
+                  <td>
+                    <h3>{"What happens if I don't buy my whole allocation?"}</h3>
+                  </td>
+                  <td>
+                    <p>{"You won't have a second chance to buy as the amount unsold gets redistributed to the pool of investors and you lose access to the whitelist."}</p>
                   </td>
                 </tr>                 
                 <tr>  
@@ -99,7 +115,7 @@ export default function IndexPage() {
                     <h3>{"Are there any restrictions on who can participate in the token sale?"}</h3>
                   </td>
                   <td>
-                    <p>{"If you are a citizen of any US sanctioned countries you shall not participate in this sale."}</p>
+                    <p>{"If you are a citizen of any US/UK sanctioned countries you shall not participate in this sale. In addition, we are not able to issue awards to individuals who are on sanctions lists or who are in countries on sanctions lists (e.g. North Korea, Iran, etc)."}</p>
                   </td>
                 </tr>    
                 <tr>  
@@ -110,14 +126,21 @@ export default function IndexPage() {
                     <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on Telegram or Discord."}
                     <br /><span style={{color:"#905bc4"}}><a onClick={addTokenToMetamask}>Add token to Metamask</a></span></p>
                   </td>
-                </tr>  
+                </tr> 
+                <tr>  
+                  <td>
+                  </td>
+                  <td>
+                  <Box sx={styles.btnWrap}>
+                    <Link href={"https://launch.elysian.finance"} target="_new" sx={styles.btn}>
+                      {"Go to launchpad"}
+                    </Link>
+                  </Box>
+                  </td>
+                </tr> 
               </table>
 
-              <Box sx={styles.btnWrap}>
-                <Link href={"https://launch.elysian.finance"} target="_new" sx={styles.btn}>
-                  {"Launchpad"}
-                </Link>
-              </Box>
+
             </Box>
  
           </Container>
