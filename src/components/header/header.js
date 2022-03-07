@@ -36,7 +36,7 @@ export default function Header({ className }) {
      
               <a href={path} sx={styles.nav.navLink} target="_new" key={i}>{label}</a>
             ))}
-            <Button sx={styles.btn}>Launch dApp</Button>
+            <Button sx={styles.btn}><a href="https://launch.elysian.finance" target="_new">Launch dApp</a></Button>
           </Flex>
           <MobileDrawer />
         </Container>
