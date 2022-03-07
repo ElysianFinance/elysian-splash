@@ -5,7 +5,7 @@ module.exports = {
     author: `Elysian`,
   },
   plugins: [
-
+    'gatsby-plugin-breakpoints',
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
     {
@@ -37,7 +37,7 @@ module.exports = {
         },
       },
     },
-    {
+    /*{
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
@@ -61,7 +61,7 @@ module.exports = {
         // defaults to false
         enableWebVitalsTracking: true,
       },
-    },    
+    }, */  
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
