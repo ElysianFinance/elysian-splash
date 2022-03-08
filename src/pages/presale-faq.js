@@ -79,6 +79,7 @@ const content = () => {
         <p>{"The presale will take place simultaneously on Ethereum and Binance Smart Chain (BSC). If you buy on BSC, you will be able to redeem your tokens on Ethereum."}</p>
       </td>
     </tr>
+    <tr>
     <td>
         <h3>{"What's the contract address?"}</h3>
       </td>
