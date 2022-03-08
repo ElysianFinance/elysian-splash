@@ -70,12 +70,20 @@ const content = () => {
         <p>{"Accepted currencies are ETH, BNB, DAI, USDC and USDT."}</p>
       </td>
     </tr>
+    
     <tr>  
       <td>
         <h3>{"On which blockchain is the presale happening?"}</h3>
       </td>
       <td>
         <p>{"The presale will take place simultaneously on Ethereum and Binance Smart Chain (BSC). If you buy on BSC, you will be able to redeem your tokens on Ethereum."}</p>
+      </td>
+    </tr>
+    <td>
+        <h3>{"What's the contract address?"}</h3>
+      </td>
+      <td>
+        <p>{"You can find the contract with verified sources on "}<a href="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</a>.</p>
       </td>
     </tr>
     <tr>  
