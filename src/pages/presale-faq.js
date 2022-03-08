@@ -91,7 +91,7 @@ const content = () => {
         <h3>{"What is pLYS price during the private sale?"}</h3>
       </td>
       <td>
-        <p>{"The price during the private sale is $0.01 (US Dollars)."}</p>
+        <p>{"The price during the private sale is $0.03 (US Dollars)."}</p>
       </td>
     </tr>   
     <tr>  
