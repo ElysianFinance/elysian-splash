@@ -67,7 +67,7 @@ const content = () => {
         <h3>{"How do I purchase pLYS token?"}</h3>
       </td>
       <td>
-        <p>{"Accepted currencies are ETH, BNB, DAI, USDC, USDT and sUSD."}</p>
+        <p>{"Accepted currencies are ETH, BNB, DAI, USDC and USDT."}</p>
       </td>
     </tr>
     <tr>  
@@ -76,6 +76,14 @@ const content = () => {
       </td>
       <td>
         <p>{"The presale will take place simultaneously on Ethereum and Binance Smart Chain (BSC). If you buy on BSC, you will be able to redeem your tokens on Ethereum."}</p>
+      </td>
+    </tr>
+    <tr>  
+      <td>
+        <h3>{"Can I buy my allocation on both Ethereum and Binance Smart Chain?"}</h3>
+      </td>
+      <td>
+        <p>{"Yes you can and you are welcomed to do so."}</p>
       </td>
     </tr>
     <tr>  
