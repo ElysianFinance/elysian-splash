@@ -147,9 +147,11 @@ console.log(breakpoints)
           <Container sx={styles.container}>
             <Box sx={styles.content}>
               <Heading as="h1"> 
-                <span style={{color:"#905bc4", fontSize:"36px"}}>{"Presale FAQ"}</span>{" "}<br/>
+                <span style={{color:"#905bc4", fontSize:"36px" }}>{"Presale FAQ"}</span>{" "}<br/>
                 </Heading>
-                {content()}
+                <Box style={{marginTop:"20px"}}>
+                     {content()}
+                </Box>
             </Box>
  
           </Container>
@@ -161,7 +163,10 @@ console.log(breakpoints)
                  <Heading as="h1"> 
                    <span style={{color:"#905bc4", fontSize:"36px"}}>{"Presale FAQ"}</span>{" "}<br/>
                    </Heading>
-                   {content()}
+
+                   <Box style={{marginTop:"40px"}}>
+                     {content()}
+                    </Box>
                </Box>
              </Container>
            </Box> 
