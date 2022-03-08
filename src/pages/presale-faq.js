@@ -3,8 +3,9 @@ import { StickyProvider } from 'contexts/app/app.provider';
 import Seo from 'components/seo';
 import Banner from 'sections/banner';
 import Layout from 'components/layout';
-import { jsx, Flex, Container, Box, Heading, Text, Button, Link } from 'theme-ui';
+import { jsx, Flex, Container, Box, Heading, Text, Button } from 'theme-ui';
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
+import { Link } from "gatsby"
 
 import 'rc-drawer/assets/index.css';
 import 'react-modal-video/css/modal-video.min.css';
@@ -53,6 +54,7 @@ export default function IndexPage() {
 
 const content = () => {
   return (
+    <div >
     <table >
     <tr>  
       <td>
@@ -84,7 +86,7 @@ const content = () => {
         <h3>{"What's the contract address?"}</h3>
       </td>
       <td>
-        <p>{"You can find the contract with verified sources on "}<a href="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</a>.</p>
+        <p>{"You can find the contract with verified sources on "}<Link   to="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</Link>.</p>
       </td>
     </tr>
     <tr>  
@@ -132,8 +134,8 @@ const content = () => {
         <h3>{"How do I confirm my contribution was received?"}</h3>
       </td>
       <td>
-        <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on"} <a href="https://discord.gg/gNFfBfV4he" target="_new">Discord</a> or <a href="https://t.me/elysianfinance" target="_new">Telegram</a>
-        <br /><span style={{color:"#905bc4"}}><a onClick={addTokenToMetamask}>Add token to Metamask</a></span></p>
+        <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on"} <Link  to="https://discord.gg/gNFfBfV4he" target="_new">Discord</Link> or <Link to="https://t.me/elysianfinance" target="_new">Telegram</Link>
+        <br /><span style={{color:"#905bc4"}}><Link onClick={addTokenToMetamask}>Add token to Metamask</Link></span></p>
       </td>
     </tr> 
     <tr>  
@@ -148,7 +150,7 @@ const content = () => {
       </td>
     </tr> 
   </table>
-
+    </div>
   )
 }
 console.log(breakpoints)
@@ -194,6 +196,7 @@ console.log(breakpoints)
 }
 
 const styles = {
+
   header: {
     color: 'text_white',
     fontWeight: 'normal',
