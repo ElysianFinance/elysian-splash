@@ -133,7 +133,7 @@ const content = () => {
             <h3>{"How do I confirm my contribution was received?"}</h3>
           </td>
           <td style={{paddingLeft:"50px"}}>
-            <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on"} <Link  to="https://discord.gg/gNFfBfV4he" target="_new">Discord</Link> or <Link to="https://t.me/elysianfinance" target="_new">Telegram</Link>
+            <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on"} <Link  to="https://discord.gg/gNFfBfV4he" target="_new">Discord</Link> or <Link to="https://t.me/elysianfinance" target="_new">Telegram.</Link>
             <br /><span style={{color:"#905bc4"}}><Link onClick={addTokenToMetamask}>Add token to Metamask</Link></span></p>
           </td>
         </tr> 
