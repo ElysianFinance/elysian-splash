@@ -85,7 +85,7 @@ const content = () => {
             <h3>{"What's the token contract address?"}</h3>
           </td>
           <td style={{paddingLeft:"50px"}}>
-            <p>{"You can find the contract with verified sources on "}<Link   to="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</Link>.</p>
+            <p>{"You can find the contract with verified sources on "}<Link sx={{color: '#905bc4','&.visited': {color: '#905bc4'}}}   to="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</Link>.</p>
           </td>
         </tr>
         <tr>  
@@ -133,7 +133,7 @@ const content = () => {
             <h3>{"How do I confirm my contribution was received?"}</h3>
           </td>
           <td style={{paddingLeft:"50px"}}>
-            <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on"} <Link  to="https://discord.gg/gNFfBfV4he" target="_new">Discord</Link> or <Link to="https://t.me/elysianfinance" target="_new">Telegram.</Link>
+            <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on"} <Link sx={{color: '#905bc4','&.visited': {color: '#905bc4'}}}> to="https://discord.gg/gNFfBfV4he" target="_new">Discord</Link> or <Link sx={{color: '#905bc4','&.visited': {color: '#905bc4'}}} to="https://t.me/elysianfinance" target="_new">Telegram.</Link>
             <br /><span style={{color:"#905bc4"}}><Link onClick={addTokenToMetamask}>Add token to Metamask</Link></span></p>
           </td>
         </tr> 
