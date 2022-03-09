@@ -56,93 +56,92 @@ const content = () => {
   return (
     <div >
     <table >
-    <tr>  
+        <tr>  
+          <td width={"35%"} >
+            <h3><b>{"When is the presale?"}</b></h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"The presale has begun and will last until all tokens are exhausted."}</p>
+          </td>
+        </tr>
+        <tr>  
+          <td>
+            <h3>{"How do I purchase pLYS token?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"Accepted currencies are ETH, BNB, DAI, USDC and USDT."}</p>
+          </td>
+        </tr>
+        <tr>  
+          <td>
+            <h3>{"On which blockchain is the presale happening?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"The presale will take place simultaneously on Ethereum and Binance Smart Chain (BSC). If you buy on BSC, you will be able to redeem your tokens on Ethereum."}</p>
+          </td>
+        </tr>
+        <tr>
+        <td>
+            <h3>{"What's the token contract address?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"You can find the contract with verified sources on "}<Link   to="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</Link>.</p>
+          </td>
+        </tr>
+        <tr>  
+          <td>
+            <h3>{"Can I buy my allocation on both Ethereum and Binance Smart Chain?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"Yes you can and you are welcomed to do so."}</p>
+          </td>
+        </tr>
+        <tr>  
+          <td>
+            <h3>{"What is pLYS price during the private sale?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"The price during the private sale is $0.03 (US Dollars)."}</p>
+          </td>
+        </tr>   
+        <tr>  
+          <td>
+            <h3>{"Is there a minimum investment amount during the token sale?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"There is no minimum, however there is a maximum number of tokens allocated. The allocation is calculated as the total amount of pLYS available divided by the amount of participants and will vary if participants do not buy their whole allocation."}</p>
+          </td>
+        </tr>  
+        <tr>  
+          <td>
+            <h3>{"What happens if I don't buy my whole allocation?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"You won't have a second chance to buy as the amount unsold gets redistributed to the pool of investors and you lose access to the whitelist."}</p>
+          </td>
+        </tr>                 
+        <tr>  
+          <td>
+            <h3>{"Are there any restrictions on who can participate in the token sale?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"If you are a citizen of any US or UK sanctioned countries you shall not participate in this sale. In addition, we are not able to do business with individuals who are on sanctions lists or who are in countries on sanctions lists (e.g. North Korea, Iran, etc)."}</p>
+          </td>
+        </tr>    
+        <tr>  
+          <td>
+            <h3>{"How do I confirm my contribution was received?"}</h3>
+          </td>
+          <td style={{paddingLeft:"50px"}}>
+            <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on"} <Link  to="https://discord.gg/gNFfBfV4he" target="_new">Discord</Link> or <Link to="https://t.me/elysianfinance" target="_new">Telegram</Link>
+            <br /><span style={{color:"#905bc4"}}><Link onClick={addTokenToMetamask}>Add token to Metamask</Link></span></p>
+          </td>
+        </tr> 
+        <tr>  
       <td>
-        <h3>{"When is the presale?"}</h3>
       </td>
       <td>
-        <p>{"The presale has begun and will last until all tokens are exhausted."}</p>
-      </td>
-    </tr>
-    <tr>  
-      <td>
-        <h3>{"How do I purchase pLYS token?"}</h3>
-      </td>
-      <td>
-        <p>{"Accepted currencies are ETH, BNB, DAI, USDC and USDT."}</p>
-      </td>
-    </tr>
-    
-    <tr>  
-      <td>
-        <h3>{"On which blockchain is the presale happening?"}</h3>
-      </td>
-      <td>
-        <p>{"The presale will take place simultaneously on Ethereum and Binance Smart Chain (BSC). If you buy on BSC, you will be able to redeem your tokens on Ethereum."}</p>
-      </td>
-    </tr>
-    <tr>
-    <td>
-        <h3>{"What's the token contract address?"}</h3>
-      </td>
-      <td>
-        <p>{"You can find the contract with verified sources on "}<Link   to="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</Link>.</p>
-      </td>
-    </tr>
-    <tr>  
-      <td>
-        <h3>{"Can I buy my allocation on both Ethereum and Binance Smart Chain?"}</h3>
-      </td>
-      <td>
-        <p>{"Yes you can and you are welcomed to do so."}</p>
-      </td>
-    </tr>
-    <tr>  
-      <td>
-        <h3>{"What is pLYS price during the private sale?"}</h3>
-      </td>
-      <td>
-        <p>{"The price during the private sale is $0.03 (US Dollars)."}</p>
-      </td>
-    </tr>   
-    <tr>  
-      <td>
-        <h3>{"Is there a minimum investment amount during the token sale?"}</h3>
-      </td>
-      <td>
-        <p>{"There is no minimum, however there is a maximum number of tokens allocated. The allocation is calculated as the total amount of pLYS available divided by the amount of participants and will vary if participants do not buy their whole allocation."}</p>
-      </td>
-    </tr>  
-    <tr>  
-      <td>
-        <h3>{"What happens if I don't buy my whole allocation?"}</h3>
-      </td>
-      <td>
-        <p>{"You won't have a second chance to buy as the amount unsold gets redistributed to the pool of investors and you lose access to the whitelist."}</p>
-      </td>
-    </tr>                 
-    <tr>  
-      <td>
-        <h3>{"Are there any restrictions on who can participate in the token sale?"}</h3>
-      </td>
-      <td>
-        <p>{"If you are a citizen of any US or UK sanctioned countries you shall not participate in this sale. In addition, we are not able to do business with individuals who are on sanctions lists or who are in countries on sanctions lists (e.g. North Korea, Iran, etc)."}</p>
-      </td>
-    </tr>    
-    <tr>  
-      <td>
-        <h3>{"How do I confirm my contribution was received?"}</h3>
-      </td>
-      <td>
-        <p>{"Your funds will be reflected on your wallet as soon as your contribution is received and has been confirmed on the network. If you don’t receive the tokens, contact an admin on"} <Link  to="https://discord.gg/gNFfBfV4he" target="_new">Discord</Link> or <Link to="https://t.me/elysianfinance" target="_new">Telegram</Link>
-        <br /><span style={{color:"#905bc4"}}><Link onClick={addTokenToMetamask}>Add token to Metamask</Link></span></p>
-      </td>
-    </tr> 
-    <tr>  
-      <td>
-      </td>
-      <td>
-      <Box sx={styles.btnWrap}>
+      <Box sx={styles.btnWrap} style={{paddingLeft:"50px"}}>
         <Link href={"https://launch.elysian.finance"} target="_new" sx={styles.btn}>
           {"Go to launchpad"}
         </Link>
@@ -153,7 +152,7 @@ const content = () => {
     </div>
   )
 }
-console.log(breakpoints)
+
   return (
     <StickyProvider>
       <Layout>
