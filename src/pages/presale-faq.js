@@ -83,7 +83,7 @@ const content = () => {
     </tr>
     <tr>
     <td>
-        <h3>{"What's the contract address?"}</h3>
+        <h3>{"What's the token contract address?"}</h3>
       </td>
       <td>
         <p>{"You can find the contract with verified sources on "}<Link   to="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</Link>.</p>
