@@ -69,7 +69,7 @@ const content = () => {
             <h3>{"How do I purchase pLYS token?"}</h3>
           </td>
           <td style={{paddingLeft:"50px"}}>
-            <p>{"Accepted currencies are ETH, BNB, DAI, USDC and USDT."}</p>
+            <p>{"Accepted currencies are DAI, USDC and USDT."}</p>
           </td>
         </tr>
         <tr>  
@@ -85,7 +85,7 @@ const content = () => {
             <h3>{"What's the token contract address?"}</h3>
           </td>
           <td style={{paddingLeft:"50px"}}>
-            <p>{"You can find the contract with verified sources on "}<Link sx={{color: '#905bc4','&.visited': {color: '#905bc4'}}}   to="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</Link>.</p>
+            <p>{"You can find the contract with verified sources on "}<Link activeClassName="active" sx={{color: '#905bc4','&.visited': {color: '#905bc4'}}}   to="https://etherscan.io/address/0x25bf213773e5fc3644da4f134de310370dcaa3e8" target="_new">Etherscan</Link>.</p>
           </td>
         </tr>
         <tr>  
