@@ -122,7 +122,7 @@ class ContactForm extends React.Component {
          }}
          method="post"
        >
-        <h1><span style={{color:"#39419b"}}>Pre-Elysian (pLYS)</span><span style={{color:"#905bc4"}}> whitelist form</span></h1>
+        <h1><span style={{color:"#39419b"}}>Elysian Fair launch</span><span style={{color:"#905bc4"}}> whitelist</span></h1>
         <label htmlFor="fromEmail" style={{fontSize:"18px"}}>Your email address:</label>
         <input
             type="email"
